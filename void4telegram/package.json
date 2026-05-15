@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "telegram": "^2.26.22",
+    "trash": "^10.1.1"
+  }
+}
