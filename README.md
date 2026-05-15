@@ -21,6 +21,9 @@ In the future, Void is planned to be expanded to the self-hosted file tracker th
 
 ### Void Utilities
 
+- [x] Fix hashes.
+- [x] Find missing hashes.
+
 ### MultiHasher4Void
 
 - [x] Pass files and directories to MultiHasher.
