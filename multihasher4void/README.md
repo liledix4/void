@@ -4,11 +4,13 @@ MultiHasher, a file hash calculator, can be downloaded for free from the [offici
 
 ## How to use?
 
-In order to apply Void way of file organizing using MultiHasher, you have to use two separate batch script files: ``gethashsumfile.bat`` and ``runfromhashsum.bat``.
+In order to apply Void way of file organizing using MultiHasher, you have to use the same batch script ``run.bat`` for two different purposes.
 
-### Get Hash Sum File
+### Step 1: Get Hash Sum File
 
-First, you need to get a list of hash sums of all files you need to organize. For that, you need to have these environment variables filled out in ``.env`` file:
+First, you need to get a list of hash sums of all files you need to organize. Drag-and-drop onto batch script either files separately or a directory containing them.
+
+For that to work, you need to have these environment variables filled out in ``.env`` file:
 
 - ``MULTIHASHER_EXECUTABLE_PATH``—full path to ``MultiHasher.exe`` executable file.
 - ``HASH_ALGORITHM``—type of hash algorithm to work with. As of MultiHasher 2.8.2, the following values are supported: ``crc32``, ``md5``, ``ripemd160``, ``sha1``, ``sha224``, ``sha256``, ``sha384``, ``sha512``, ``sha512-224``, ``sha512-256``.
@@ -18,8 +20,8 @@ First, you need to get a list of hash sums of all files you need to organize. Fo
 >
 > Once the hash calculation is complete, select ``File → Save list...``. Save as MultiHasher XML (``.mhx``). After that, you move on to the next batch script.
 
-### Run from Hash Sum File
+### Step 2: Run from Hash Sum File
 
-Once you have a hash sum file (XML-formatted ``.mhx``), you use this batch script to finally rename and move files in the Void fashion. This script doesn't do additional calculations since it's assumed that MultiHasher already did heavy lifting.
+Once you have a hash sum file (XML-formatted ``.mhx``), you drag-and-drop it onto batch script to finally rename and move files in the Void fashion. Script doesn't do additional calculations since it's assumed that MultiHasher already did heavy lifting.
 
 If you don't use ``VOID_OUTPUT_PATH`` environment variable, script puts all files (collected into directories named after file extensions) next to the place you run the script from.
