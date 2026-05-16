@@ -24,4 +24,4 @@ For that to work, you need to have these environment variables filled out in ``.
 
 Once you have a hash sum file (XML-formatted ``.mhx``), you drag-and-drop it onto batch script to finally rename and move files in the Void fashion. Script doesn't do additional calculations since it's assumed that MultiHasher already did heavy lifting.
 
-If you don't use ``VOID_OUTPUT_PATH`` environment variable, script puts all files (collected into directories named after file extensions) next to the place you run the script from.
+If you don't use ``VOID_OUTPUT_PATH`` environment variable, script puts all files (collected into directories named after file extensions) into a directory you run the script from.
