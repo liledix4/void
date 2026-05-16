@@ -1,8 +1,12 @@
 # 🌀 Void
 
-**Void** is a file organizer. Primarily for Windows, however it can be adapted to support Linux.
+**Void** is a file organizer. It's hash-based, it heavily relies on the calculation of hash sums: hierarchy is relatively flat, with files being renamed to their hashes, however the original file names are being stored in special ``.void`` text files.
+
+Void is being developed primarily for Windows, however it can be adapted to support Linux.
 
 In the future, Void is planned to be expanded to the self-hosted file tracker that parses file lists from repositories and provides sources to download specific files from various sources.
+
+Void is created and maintained by **liledix⁴**.
 
 ## Features
 
@@ -23,6 +27,7 @@ In the future, Void is planned to be expanded to the self-hosted file tracker th
   - [ ] Various types may be supported: classic symbolic links, junction points, and hard links.
 - [ ] Smarter ``.void`` lists. Make it possible to set the dynamic rules. Depending on the available metadata, you may specify, create regular expression, or set the range for such file attributes as: file name, file size, date modified, date created, intended directory, hash pattern, track name (for music), and so on.
 - [ ] Split Void to minimal version (everything necessary in just one script file without third-party packages) and full version (a proper swiss-army knife).
+- [ ] Make it possible to pack full version of Void into a single executable or Linux package. It also may have some GUI, at least CLI-based.
 
 ### Void4Telegram
 
