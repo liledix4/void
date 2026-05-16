@@ -21,6 +21,8 @@ In the future, Void is planned to be expanded to the self-hosted file tracker th
   - [ ] Make it syncable. Meaning: if ``.fromvoid`` file constantly gets an updated structure, then rebuild the structure and make it up to date.
 - [ ] Instead of straight-up copying, make it able to rely on symbolic links.
   - [ ] Various types may be supported: classic symbolic links, junction points, and hard links.
+- [ ] Smarter ``.void`` lists. Make it possible to set the dynamic rules. Depending on the available metadata, you may specify, create regular expression, or set the range for such file attributes as: file name, file size, date modified, date created, intended directory, hash pattern, track name (for music), and so on.
+- [ ] Split Void to minimal version (everything necessary in just one script file without third-party packages) and full version (a proper swiss-army knife).
 
 ### Void4Telegram
 
