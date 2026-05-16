@@ -6,7 +6,7 @@ In the future, Void is planned to be expanded to the self-hosted file tracker th
 
 ## Features
 
-### Void File Organizer
+### Void (main script)
 
 - [x] Drag and drop files and folders onto batch script for processing.
   - [ ] For Linux.
@@ -15,6 +15,10 @@ In the future, Void is planned to be expanded to the self-hosted file tracker th
 - [ ] Clear empty directories.
 - [ ] ``[TEMP]`` Merge Void Utilities and MultiHasher4Void into it.
   - [ ] If file exceeds the 2 GiB limit for hash calculation, add its path to the temporary array until the operation ends, then pass the collected array to MultiHasher.
+- [ ] Return file metadata when hash is requested. If file is absent, but record of it exists in ``.void`` files, return the record itself.
+- [ ] Copy file from Void to a specific directory under the name for that file known from ``.void`` records.
+- [ ] Rebuild a certain file structure using ``.fromvoid`` file.
+  - [ ] Make it syncable. Meaning: if ``.fromvoid`` file constantly gets an updated structure, then rebuild the structure and make it up to date.
 
 ### Void4Telegram
 
