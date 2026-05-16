@@ -6,6 +6,7 @@ import { findFile } from './parts/findfile.mjs';
 import { getChatHistory } from './parts/chathistory.mjs';
 import { listFiles } from './parts/getlistoffiles.mjs';
 import { voidConfig } from './parts/constants.mjs';
+import { regexFromString } from './parts/regexfromstring.mjs';
 
 
 let excludeFiles = [
@@ -17,14 +18,7 @@ let excludeFiles = [
   'void_checkout.mjs',
 ];
 
-voidConfig.exclude.forEach( str => {
-  if ( str[ 0 ] === '/' && str[ str.length - 1 ] === '/' ) {
-    try { excludeFiles.push( new RegExp( str.slice(1, -1) ) ); }
-    catch { excludeFiles.push( str ); }
-  }
-  else
-    excludeFiles.push( str );
-} );
+voidConfig.exclude.forEach( str => excludeFiles.push( regexFromString( str ) ) );
 
 
 await logIn();
