@@ -12,6 +12,8 @@ Void is created and maintained by **liledix⁴**.
 
 ### Void (main script)
 
+- [x] Calculate hash sum for a file, rename file to its hash, then create a directory named after file extension and put a file in there.
+- [x] If directory is being a target, recursively process each file in it.
 - [x] Drag and drop files and folders onto batch script for processing.
   - [ ] For Linux.
 - [x] Checkout local files in case if they're already uploaded online.
