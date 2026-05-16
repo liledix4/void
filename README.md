@@ -40,7 +40,7 @@ That's how you achieve easy public sharing while also maintaining file integrity
 - [ ] ``.env`` support for additional configurations.
 - [ ] Hashtag parsing in ``.void`` files as an additional way of grouping files for restructuring.
 - [ ] Local server that goes through ``.void`` files and also reads metadata of hash-calculated files.
-- [ ] Integration with Q, liledix⁴'s another project for parsing ``.q`` data files (in a manner of ``.json``, ``.csv``, ``.xml``, ``.yaml``, and so on, but more flexible) for a vast variety of purposes, such as creating a "marketplace" WebUI for installable executable files.
+- [ ] Integration with Q, liledix⁴'s another project for parsing ``.q`` data files (in a manner of ``.json``, ``.csv``, ``.xml``, ``.yaml``, and so on, but more flexible) for a vast variety of purposes, such as creating a "marketplace" WebUI for installable executable files, or a SoundCloud-like music player WebUI for local audio files.
 
 ### Void4Telegram
 
