@@ -17,6 +17,7 @@ Void is created and maintained by **liledix⁴**.
 - [x] Drag and drop files and folders onto batch script for processing.
   - [ ] For Linux.
 - [x] Checkout local files in case if they're already uploaded online.
+  - For now, it reads ``result.json`` of exported Telegram chat and compares it to local files.
 - [ ] Add certain file extensions to ZIP archives that Telegram never or improperly treat as documents, particularly GIF and WebP.
 - [ ] Clear empty directories.
 - [ ] ``[TEMP]`` Merge Void Utilities and MultiHasher4Void into it.
