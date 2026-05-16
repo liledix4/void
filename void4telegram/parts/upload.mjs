@@ -1,12 +1,22 @@
 import { humanizeFileSize } from './humanizefilesize.mjs';
 import { client } from './login.mjs';
-import { statSync } from 'node:fs';
+import { renameSync, statSync } from 'node:fs';
 import { delay } from './delay.mjs';
 import { telegramConfig, voidConfig } from './constants.mjs';
 import trash from 'trash';
+import { extname } from 'node:path';
+
+
+const problematicFileExtensions = [ '.gif', '.webm', '.webp' ];
 
 
 export async function uploadFile( filePath, moveToRecycleBin = false ) {
+  if ( problematicFileExtensions.includes( extname( filePath ) ) ) {
+    const append = 'file';
+    renameSync( filePath, filePath + append );
+    filePath += append;
+  }
+
   process.stdout.write( '\n🔄️ New upload started: ' + filePath );
   const fileSize = humanizeFileSize( statSync( filePath ).size );
   await client.sendFile( voidConfig.chatID, {

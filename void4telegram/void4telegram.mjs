@@ -8,15 +8,23 @@ import { listFiles } from './parts/getlistoffiles.mjs';
 import { voidConfig } from './parts/constants.mjs';
 
 
-const excludeFiles = [
+let excludeFiles = [
   /\.void$/,
   'Drag and Drop Files Here.bat',
   'Drag and Drop Folders Here.bat',
   'File Checkout.bat',
   'void.mjs',
   'void_checkout.mjs',
-  /\.(?:gif|webp)$/,
 ];
+
+voidConfig.exclude.forEach( str => {
+  if ( str[ 0 ] === '/' && str[ str.length - 1 ] === '/' ) {
+    try { excludeFiles.push( new RegExp( str.slice(1, -1) ) ); }
+    catch { excludeFiles.push( str ); }
+  }
+  else
+    excludeFiles.push( str );
+} );
 
 
 await logIn();
