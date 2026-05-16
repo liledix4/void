@@ -14,6 +14,7 @@ In the future, Void is planned to be expanded to the self-hosted file tracker th
 - [ ] Add certain file extensions to ZIP archives that Telegram never or improperly treat as documents, particularly GIF and WebP.
 - [ ] Clear empty directories.
 - [ ] ``[TEMP]`` Merge Void Utilities and MultiHasher4Void into it.
+  - [ ] If file exceeds the 2 GiB limit for hash calculation, add its path to the temporary array until the operation ends, then pass the collected array to MultiHasher.
 
 ### Void4Telegram
 
