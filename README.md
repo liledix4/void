@@ -13,7 +13,7 @@ In the future, Void is planned to be expanded to the self-hosted file tracker th
 - [x] Checkout local files in case if they're already uploaded online.
 - [ ] Add certain file extensions to ZIP archives that Telegram never or improperly treat as documents, particularly GIF and WebP.
 - [ ] Clear empty directories.
-- [ ] ``[TEMP]`` Merge Void Utilities into it.
+- [ ] ``[TEMP]`` Merge Void Utilities and MultiHasher4Void into it.
 
 ### Void4Telegram
 
