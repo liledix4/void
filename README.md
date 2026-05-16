@@ -29,6 +29,8 @@ In the future, Void is planned to be expanded to the self-hosted file tracker th
 - [x] Connect to your Telegram account.
 - [x] Upload files to Telegram chat.
 - [x] Download files from Telegram chat.
+- [x] Get a full Telegram chat history (no files downloaded).
+- [x] Check if a certain file name exists in Telegram chat.
 
 ### Void Utilities
 
