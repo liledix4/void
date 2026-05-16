@@ -4,9 +4,15 @@
 
 Void is being developed primarily for Windows, however it can be adapted to support Linux.
 
+Void is created and maintained by **liledix⁴**.
+
+## Planned Evolution of Void
+
 In the future, Void is planned to be expanded to the self-hosted file tracker that parses file lists from repositories and provides sources to download specific files from various sources.
 
-Void is created and maintained by **liledix⁴**.
+Basically, you pick a list of repositories containing ``.void`` files. Those files may contain links for download. You use WebUI or CLI or any other interface to fetch files using metadata you know: hash (full or partial), file name, file extension, file size, and so on.
+
+That's how you achieve easy public sharing while also maintaining file integrity by default, allowing for some security.
 
 ## Features
 
@@ -32,6 +38,7 @@ Void is created and maintained by **liledix⁴**.
 - [ ] Split Void to minimal version (everything necessary in just one script file without third-party packages) and full version (a proper swiss-army knife).
 - [ ] Make it possible to pack full version of Void into a single executable or Linux package. It also may have some GUI, at least CLI-based.
 - [ ] ``.env`` support for additional configurations.
+- [ ] Hashtag parsing in ``.void`` files as an additional way of grouping files for restructuring.
 
 ### Void4Telegram
 
