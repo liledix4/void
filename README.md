@@ -39,5 +39,7 @@ In the future, Void is planned to be expanded to the self-hosted file tracker th
 
 ### MultiHasher4Void
 
+[See more here.](./multihasher4void/README.md)
+
 - [x] Pass files and directories to MultiHasher.
 - [x] Using MHX files (MultiHasher XML), organize files in Void fashion.
