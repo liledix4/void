@@ -19,6 +19,8 @@ In the future, Void is planned to be expanded to the self-hosted file tracker th
 - [ ] Copy file from Void to a specific directory under the name for that file known from ``.void`` records.
 - [ ] Rebuild a certain file structure using ``.fromvoid`` file.
   - [ ] Make it syncable. Meaning: if ``.fromvoid`` file constantly gets an updated structure, then rebuild the structure and make it up to date.
+- [ ] Instead of straight-up copying, make it able to rely on symbolic links.
+  - [ ] Various types may be supported: classic symbolic links, junction points, and hard links.
 
 ### Void4Telegram
 
