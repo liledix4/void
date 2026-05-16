@@ -39,6 +39,8 @@ That's how you achieve easy public sharing while also maintaining file integrity
 - [ ] Make it possible to pack full version of Void into a single executable or Linux package. It also may have some GUI, at least CLI-based.
 - [ ] ``.env`` support for additional configurations.
 - [ ] Hashtag parsing in ``.void`` files as an additional way of grouping files for restructuring.
+- [ ] Local server that goes through ``.void`` files and also reads metadata of hash-calculated files.
+- [ ] Integration with Q, liledix⁴'s another project for parsing ``.q`` data files (in a manner of ``.json``, ``.csv``, ``.xml``, ``.yaml``, and so on, but more flexible) for a vast variety of purposes, such as creating a "marketplace" WebUI for installable executable files.
 
 ### Void4Telegram
 
@@ -55,7 +57,7 @@ That's how you achieve easy public sharing while also maintaining file integrity
 
 ### MultiHasher4Void
 
-[See more here.](./multihasher4void/README.md)
+[See more here](./multihasher4void/README.md).
 
 - [x] Pass files and directories to MultiHasher.
 - [x] Using MHX files (MultiHasher XML), organize files in Void fashion.
@@ -65,3 +67,7 @@ That's how you achieve easy public sharing while also maintaining file integrity
 - Due to Node.js restrictions, Void can't calculate hash for the files bigger than 2 GiB. Therefore, Void relies on MultiHasher for that specific task.
 - Void can't work with files being located in a drive different from a drive where the script is running.
 - If you rely on drag-and-dropping into Windows batch scripts, certain complex names of files and directories can be read incorrectly. That's an issue of how Windows batch script treats the input file paths. If you do it with files separately, better put them into a directory and drag-and-drop directory instead, Void script itself will read the files correctly.
+
+## License
+
+[Apache License, Version 2.0](./LICENSE).
