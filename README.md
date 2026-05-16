@@ -28,6 +28,7 @@ Void is created and maintained by **liledix⁴**.
 - [ ] Smarter ``.void`` lists. Make it possible to set the dynamic rules. Depending on the available metadata, you may specify, create regular expression, or set the range for such file attributes as: file name, file size, date modified, date created, intended directory, hash pattern, track name (for music), and so on.
 - [ ] Split Void to minimal version (everything necessary in just one script file without third-party packages) and full version (a proper swiss-army knife).
 - [ ] Make it possible to pack full version of Void into a single executable or Linux package. It also may have some GUI, at least CLI-based.
+- [ ] ``.env`` support for additional configurations.
 
 ### Void4Telegram
 
