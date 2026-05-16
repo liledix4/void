@@ -48,3 +48,9 @@ Void is created and maintained by **liledix⁴**.
 
 - [x] Pass files and directories to MultiHasher.
 - [x] Using MHX files (MultiHasher XML), organize files in Void fashion.
+
+## Known limitations and issues
+
+- Due to Node.js restrictions, Void can't calculate hash for the files bigger than 2 GiB. Therefore, Void relies on MultiHasher for that specific task.
+- Void can't work with files being located in a drive different from a drive where the script is running.
+- If you rely on drag-and-dropping into Windows batch scripts, certain complex names of files and directories can be read incorrectly. That's an issue of how Windows batch script treats the input file paths. If you do it with files separately, better put them into a directory and drag-and-drop directory instead, Void script itself will read the files correctly.
