@@ -2,7 +2,6 @@ import { spawn } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, renameSync } from 'node:fs';
 import { basename, dirname, extname, join } from 'node:path';
 import { loadEnvFile } from 'node:process';
-import path from 'path';
 import { fileURLToPath } from 'url';
 
 
@@ -12,7 +11,7 @@ const __dirname = path.dirname( __filename );
 
 process.argv.forEach( ( filePath, index ) => {
   if ( index < 2 ) return;
-  loadEnvFile( path.join( __dirname, '.env' ) );
+  loadEnvFile( join( __dirname, '.env' ) );
   if ( filePath.endsWith( '.mhx' ) )
     voidOrganizeFromMHX( filePath );
   else

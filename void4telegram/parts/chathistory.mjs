@@ -1,4 +1,4 @@
-import { config } from '../config.mjs';
+import { voidConfig } from './constants.mjs';
 import { client } from './login.mjs';
 import { writeFileSync } from 'node:fs';
 
@@ -7,7 +7,7 @@ export async function getChatHistory( toFile = './chathistory.json' ) {
   let result = {};
   let loadedMessages = 0;
 
-  for await ( const message of client.iterMessages( config.voidGroupID, { reverse: true } ) ) {
+  for await ( const message of client.iterMessages( voidConfig.chatID, { reverse: true } ) ) {
     if ( message.media && message.media.document ) {
       const attributes = message.media.document.attributes;
       const filteredObject = attributes.filter( obj => obj.fileName !== undefined );

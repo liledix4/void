@@ -1,10 +1,10 @@
 import { Api } from 'telegram';
-import { config } from '../config.mjs';
 import { client } from './login.mjs';
+import { voidConfig } from './constants.mjs';
 
 
 export async function findFile( fileName, limit = 1 ) {
-  const searchResults = await client.getMessages( config.voidGroupID, {
+  const searchResults = await client.getMessages( voidConfig.chatID, {
     search: fileName,
     filter: new Api.InputMessagesFilterDocument(),
     limit: limit,

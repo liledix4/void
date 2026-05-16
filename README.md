@@ -8,7 +8,7 @@ Void is created and maintained by **liledix⁴**.
 
 ## Planned Evolution of Void
 
-In the future, Void is planned to be expanded to the self-hosted file tracker that parses file lists from repositories and provides sources to download specific files from various sources.
+In the future, Void is planned to be expanded to the self-hosted file tracker that parses file lists from repositories and provides various sources of choice to download specific files.
 
 Basically, you pick a list of repositories containing ``.void`` files. Those files may contain links for download. You use WebUI or CLI or any other interface to fetch files using metadata you know: hash (full or partial), file name, file extension, file size, and so on.
 
@@ -44,11 +44,14 @@ That's how you achieve easy public sharing while also maintaining file integrity
 
 ### Void4Telegram
 
+Void4Telegram is powered by [GramJS](https://gram.js.org).
+
 - [x] Connect to your Telegram account.
 - [x] Upload files to Telegram chat.
 - [x] Download files from Telegram chat.
 - [x] Get a full Telegram chat history (no files downloaded).
 - [x] Check if a certain file name exists in Telegram chat.
+- [x] Configure how many workers are involved in uploads and downloads, how many times Void4Telegram tries to reconnect, and how long the timeout takes between uploads and downloads (to avoid hitting the rate limit, resulting in ``FLOOD`` error).
 
 ### Void Utilities
 
@@ -66,7 +69,7 @@ That's how you achieve easy public sharing while also maintaining file integrity
 
 - Due to Node.js restrictions, Void can't calculate hash for the files bigger than 2 GiB. Therefore, Void relies on MultiHasher for that specific task.
 - Void can't work with files being located in a drive different from a drive where the script is running.
-- If you rely on drag-and-dropping into Windows batch scripts, certain complex names of files and directories can be read incorrectly. That's an issue of how Windows batch script treats the input file paths. If you do it with files separately, better put them into a directory and drag-and-drop directory instead, Void script itself will read the files correctly.
+- If you rely on drag-and-dropping onto Windows batch scripts, certain complex names of files and directories can be read incorrectly. That's an issue of how Windows batch script treats the input file paths. If you do it with files separately, better put them into a directory and drag-and-drop directory instead, Void script itself will read the files correctly.
 
 ## License
 

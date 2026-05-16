@@ -1,6 +1,6 @@
-import { __dirname } from './void_utilities/dirname.mjs';
-import { findMissingHashes } from './void_utilities/find_missing_hashes.mjs';
-import { fixHashes } from './void_utilities/fix_hashes.mjs';
+import { __dirname } from './parts/dirname.mjs';
+import { findMissingHashes } from './parts/find_missing_hashes.mjs';
+import { fixHashes } from './parts/fix_hashes.mjs';
 
 
 const action = process.argv[ 2 ];
